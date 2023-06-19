@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/myicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="draft1.html">Home</a>
+				</div>
+				<div class="nav-link-wrapper  active-nav-link">
+					<a href="contactpage.html">Contact</a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="reviews.php">Reviews</a>
+				</div>
+                <div class="nav-link-wrapper">
+					<a href="leaveareviewpage.php" style="color:blueviolet;">Leave a review</a>
+				</div>
+                <div class="nav-link-wrapper">
+					<a href="twitterline.html">Recent news</a>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="brand">
+				<div>Joshua Edwards Tutoring</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="contact-title">
+                    <h1>Contact</h1>
+                </div>
+                <div class="contact-items-wrapper">
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="contact-img-background" style="background-image:url(images/linkedinlogo2.jpg)"></div>
+                        <div class="content-image-wrapper">
+                            <!-- <div class="logo-wrapper">
+                                <p>Linkedin here</p>
+                            </div> -->
+                            <div class="subtitle">
+                                Visit my <a href="https://www.linkedin.com/in/joshua-edwards-4347329b/" target="_blank">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="contact-img-background" style="background-image:url(images/emaillogo2.jpg)"></div>
+                        <div class="content-image-wrapper">
+                            <!-- <div class="logo-wrapper">
+                                <p>Email here</p>
+                            </div> -->
+                            <div class="subtitle">
+                                Email: joshuajamesedwards1@gmail.com <br>
+                                <a href="mailto:joshuajamesedwards1@gmail.com">send an email now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="contact-img-background" style="background-image:url(images/phonelogo2.jpg)"></div>
+                        <div class="content-image-wrapper">
+                            <!-- <div class="logo-wrapper">
+                                <p>Phone number here</p>
+                            </div> -->
+                            <div class="subtitle">
+                                Mobile: 07808226490 <br>
+                                Drop a message or <a href="tel:+447808226490">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <h6>Website created by Joshua Edwards</h6>
+                <p class="copyrightClaim" >Copyright 2022</p>
+            </footer>
+        </div>
+	</div>
+</body>
+
+<script>
+	const portfolioItems=document.querySelectorAll('.portfolio-item-wrapper')
+
+	portfolioItems.forEach(portfolioItem=>{
+		portfolioItem.addEventListener('mouseover',()=>{
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout',()=>{
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
+
