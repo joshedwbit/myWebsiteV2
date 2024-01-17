@@ -4,7 +4,7 @@ $dbHost="localhost";
 // since on local machine not on a server
 $dbUser="joshua";
 // default is root
-$dbPassword="Piercedjelly22!";
+$dbPassword="HASHED";
 // blank is default
 $dbName="joshdb1";
 // name of the db not the table
